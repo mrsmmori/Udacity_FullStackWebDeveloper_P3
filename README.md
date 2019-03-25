@@ -3,7 +3,7 @@ Udacity_FullStackWebDeveloper_P3 / Linux Server Configuration
 
 # Overview
 This is a mock project for Udacity Nanodegree / Full Stack Web Developer P3.
-There are 3 points.
+There are 3 points to achieve.
 
 1. Perform a baseline installation of a Linux server 
 2. Secure your server from a number of attack vectors, install and configure a database server
@@ -64,7 +64,7 @@ postgresql-contrib
 
 # Summary of configurations made
 
-## Ubuntu Security Settings
+## Ubuntu security configurations
 
 sshd_conf
 
@@ -106,6 +106,7 @@ To                         Action      From
 ```
 
 public key setup
+
 ```
 (2.7.12) $ ssh-keygen
 (2.7.12) $ cd /c/Users/mrsmm/.ssh/
@@ -118,7 +119,7 @@ grader@ubuntu-s-1vcpu-1gb-sgp1-01:~$ chmod 700 .ssh
 grader@ubuntu-s-1vcpu-1gb-sgp1-01:~$ chmod 600 .ssh/authorized_keys
 ```
 
-## Postgresql Settings
+## Postgresql configurations
 
 ```
 postgres=# \du
@@ -146,7 +147,8 @@ catalog=> \l
 
 ```
 
-Apache2 configuration
+## Apache2 configurations
+
 ```
 root@ubuntu-s-1vcpu-1gb-sgp1-01:/etc/apache2/sites-available# cat 000-default.conf
 <VirtualHost *:80>
@@ -165,7 +167,8 @@ root@ubuntu-s-1vcpu-1gb-sgp1-01:/etc/apache2/sites-available# cat 000-default.co
 root@ubuntu-s-1vcpu-1gb-sgp1-01:/etc/apache2/sites-available#
 ```
 
-mod_wsgi configuration
+## mod_wsgi configurations
+
 ```
 mrsmmori@ubuntu-s-1vcpu-1gb-sgp1-01:~/myapp$ cat test.wsgi.py
 import sys, site
