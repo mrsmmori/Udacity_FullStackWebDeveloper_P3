@@ -181,6 +181,11 @@ from app import app as application
 mrsmmori@ubuntu-s-1vcpu-1gb-sgp1-01:~/myapp$
 ```
 
+# List of external resources
+
+- Github repos
+- StackOverflow posts
+- Udacity Full stack nanodegree course materials.
 
 
 # Author
